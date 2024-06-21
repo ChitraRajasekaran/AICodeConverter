@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Block } from './block';
 const LanguageSelect = ({ language, onChange }) => {
   const handleChange = (e) => {
     onChange(e.target.value);
@@ -73,21 +73,35 @@ const languages = [
   { value: 'CoffeeScript', label: 'CoffeeScript' },
 ];
 
-function Languageoptions () {
-  const [language, setLanguage] = useState('');
-
-  return (
-    <div className="mt-6 flex w-full max-w-[1200px] flex-col justify-between sm:flex-row sm:space-x-4">
-      <div className="h-100 flex flex-col justify-center space-y-2 sm:w-2/4">
-        <div className="text-center text-xl text-white font-bold">Input</div>
-        <LanguageSelect language={language} onChange={setLanguage} />
+function Languageoptions() {
+    const [inputLanguage, setInputLanguage] = useState('');
+    const [outputLanguage, setOutputLanguage] = useState('');
+    const [inputCode, setInputCode] = useState('Your code here');
+    const [outputCode, setOutputCode] = useState('Converted code will appear here');
+  
+    return (
+      <div className="mt-6 flex w-full max-w-[1200px] flex-col justify-between sm:flex-row sm:space-x-4">
+        <div className="h-100 flex flex-col justify-center space-y-2 sm:w-2/4">
+          <div className="text-center text-xl text-white font-bold">Input</div>
+            <LanguageSelect language={inputLanguage} onChange={setInputLanguage} />
+            <Block
+                content={inputCode}
+                editable={true}
+                onChange={setInputCode}
+                mode="code"
+            />
+        </div>
+        <div className="h-100 flex flex-col justify-center space-y-2 sm:w-2/4">
+          <div className="text-center text-xl text-white font-bold">Output</div>
+            <LanguageSelect language={outputLanguage} onChange={setOutputLanguage} />
+            <Block
+                content={outputCode}
+                editable={false}
+                mode="code"
+            />
+        </div>
       </div>
-      <div className="h-100 flex flex-col justify-center space-y-2 sm:w-2/4">
-        <div className="text-center text-xl text-white font-bold">Output</div>
-        <LanguageSelect language={language} onChange={setLanguage} />
-      </div>
-    </div>
-  );
-}
-
-export default Languageoptions;
+    );
+  }
+  
+  export default Languageoptions;
