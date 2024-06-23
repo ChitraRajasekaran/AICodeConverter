@@ -74,8 +74,8 @@ const languages = [
 ];
 
 function Languageoptions() {
-    const [inputLanguage, setInputLanguage] = useState('');
-    const [outputLanguage, setOutputLanguage] = useState('');
+    const [inputLanguage, setInputLanguage] = useState('JavaScript');
+    const [outputLanguage, setOutputLanguage] = useState('Python');
     const [inputCode, setInputCode] = useState('Your code here');
     const [outputCode, setOutputCode] = useState('Converted code will appear here');
   
