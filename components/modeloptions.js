@@ -1,7 +1,7 @@
 import { Fragment, useState } from 'react';
 import { Apikey } from './apikey';
 
-const ModelOptions = ({ model, onChange }) => {
+const ModelOptions = () => {
   const [optionsModel, setoptionsModel] = useState('gpt-4');
 
   const [loading, setLoading] = useState(false);
