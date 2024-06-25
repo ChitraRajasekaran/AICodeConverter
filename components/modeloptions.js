@@ -2,14 +2,14 @@ import { Fragment, useState } from 'react';
 import { Apikey } from './apikey';
 
 const ModelOptions = ({ model, onChange }) => {
-  const [optionsModel, setoptionsModel] = useState(model);
+  const [optionsModel, setoptionsModel] = useState('gpt-4');
+
   const [loading, setLoading] = useState(false);
   const [hasConverted, sethasConverted] = useState(false);
   const [apiKey, setApiKey] = useState('');
   
   const handleChange = (e) => {
     setoptionsModel(e.target.value);
-    onChange(e.target.value);
   };
  
   const handleConvertion = () => {
