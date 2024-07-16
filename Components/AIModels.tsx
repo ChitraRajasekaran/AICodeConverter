@@ -16,7 +16,7 @@ const AIModels : FC<Props> = ({ model, onChange }) => {
     };
   return (
     <select
-      className="h-[40px] w-[140px] rounded-md bg-black px-4 py-2 text-white"
+      className="h-[40px] w-[140px] rounded-md bg-white px-4 py-2 text-black"
       value={model}
       onChange={handleChange}
     >
