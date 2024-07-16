@@ -6,7 +6,6 @@ interface Props {
 
 export const ApiInput : React.FC<Props> = ({ apiKey, onChange }) => {
     return (
-    <div className="mb-4 w-64">
         <input
             type="password"
             id="api-key"
@@ -15,7 +14,6 @@ export const ApiInput : React.FC<Props> = ({ apiKey, onChange }) => {
             value={apiKey}
             onChange={(e) => onChange(e.target.value)}
         />
-    </div>
     );
   }
   
