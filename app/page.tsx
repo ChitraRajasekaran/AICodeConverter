@@ -145,7 +145,6 @@ export default function Home() {
 
   return (
     <>
-    head
       <Head>
         <title> AI Code Converter</title>
         <meta name="description" content="Use AI to convert code from one language to another."/>
