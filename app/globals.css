@@ -1,16 +1,4 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
-*{
-  font-family: 'Inter', sans-serif;
-  background-color: rgb(43, 43, 45);
-}
-
-@media screen and (min-width: 320px) {
-  .card:nth-child(7n +1) {
-    grid-column: auto/span 2;
-    grid-row: auto/span 2;
-  }
-} */
 
