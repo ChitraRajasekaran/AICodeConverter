@@ -20,7 +20,7 @@ const AIModels : FC<Props> = ({ model, onChange }) => {
       value={model}
       onChange={handleChange}
     >
-      <option value="gpt-4">GPT-4</option>
+      <option className = 'text-black' value="gpt-4">GPT-4</option>
       {/* <option value="Claude">Claude</option>
       <option value="Perplexity">Perplexity</option> */}
     </select>
