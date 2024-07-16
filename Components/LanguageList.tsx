@@ -13,7 +13,7 @@ const LanguageList : FC<Props> = ({ language, onChange }) => {
 
   return (
     <select
-      className="w-full rounded-md bg-white px-4 py-2 text-black"
+      className="w-full rounded-md px-4 py-2 text-white"
       value={language}
       onChange={handleChange}
     >
