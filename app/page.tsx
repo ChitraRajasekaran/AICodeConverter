@@ -1,6 +1,5 @@
 'use client'
 import Head from 'next/head';
-import { Header } from "../Components/Header";
 import {ApiInput} from "../Components/ApiInput";
 import AIModels from "../Components/AIModels";
 import LanguageList from "../Components/LanguageList";
