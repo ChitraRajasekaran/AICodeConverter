@@ -1,7 +1,21 @@
-const LanguageList = () => {
+
+import type { FC } from 'react';
+
+interface Props {
+    language: string;
+    onChange: (language: string) => void;
+  }
+
+const LanguageList : FC<Props> = ({ language, onChange }) => {
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    onChange(e.target.value);
+  };
+
   return (
     <select
       className="w-full rounded-md bg-neutral-900 px-4 py-2 text-neutral-200"
+      value={language}
+      onChange={handleChange}
     >
       {languages
         .sort((a, b) => a.label.localeCompare(b.label))
@@ -55,7 +69,6 @@ const languages = [
     { value: 'Powershell', label: 'Powershell' },
     { value: 'PL/SQL', label: 'PL/SQL' },
     { value: 'CSS', label: 'CSS' },
-    { value: 'SCSS', label: 'SCSS' },
     { value: 'Tailwind', label: 'Tailwind' },
     { value: 'Racket', label: 'Racket' },
     { value: 'HTML', label: 'HTML' },
