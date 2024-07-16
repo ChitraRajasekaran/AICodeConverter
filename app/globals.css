@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 *{
   font-family: 'Inter', sans-serif;
   background-color: rgb(43, 43, 45);
@@ -12,5 +12,5 @@
     grid-column: auto/span 2;
     grid-row: auto/span 2;
   }
-}
+} */
 
