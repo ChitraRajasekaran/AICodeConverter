@@ -1,6 +1,7 @@
 ## AI Code Converter
 
-![image](https://github.com/user-attachments/assets/b98863ac-fa10-4d60-accf-ba6165e9900f)
+![image](https://github.com/user-attachments/assets/d1e34284-6dad-40bb-9c67-e0ae13af43b9)
+
 
 
 ## To run locally 
