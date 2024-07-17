@@ -162,7 +162,7 @@ export default function Home() {
         <div className="mt-2 flex items-center space-x-2">
           <AIModels model={model} onChange={(value) => setModel(value)}/>
           <button
-              className="w-[140px] cursor-pointer rounded-md bg-green-500 px-4 py-2 font-bold hover:bg-green-600 active:bg-green-700"
+              className="mt-[1rem] w-[140px] cursor-pointer rounded-md bg-green-500 px-4 py-2 font-bold hover:bg-green-600 active:bg-green-700"
               onClick={() => handleConvertion()}
               disabled={loading}
             >
@@ -180,7 +180,7 @@ export default function Home() {
 
         <div className="mt-6 flex w-full max-w-[1200px] flex-col justify-between sm:flex-row sm:space-x-4">
           <div className="h-100 flex flex-col justify-center space-y-2 sm:w-2/4">
-            <div className="text-center text-xl text-white font-bold">Input</div>
+            <div className="text-center text-xl  text-white font-bold">Input</div>
               <LanguageList  language={inputLanguage}
               onChange={(value) => {
                 setInputLanguage(value);
